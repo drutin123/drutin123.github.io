@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drut PDF - Privacy Policy</title>
+    <style>
+        :root {
+            --bg-color: #17130e;
+            --card-bg: #221c15;
+            --purple-card-bg: #3c303f;
+            --text-primary: #e8e2da;
+            --text-secondary: #b5aea6;
+            --purple-accent: #cbb4d9;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 24px 16px;
+            display: flex;
+            justify-content: center;
+            line-height: 1.5;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* Top sheet handle element from the design */
+        .handle-bar {
+            width: 40px;
+            height: 4px;
+            background-color: #42382e;
+            border-radius: 2px;
+            margin: 0 auto 8px auto;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0 0 8px 0;
+        }
+
+        /* Highlight feature banner (Muted Purple) */
+        .highlight-card {
+            background-color: var(--purple-card-bg);
+            border-radius: 16px;
+            padding: 20px;
+        }
+
+        .highlight-card h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 16px 0;
+            color: var(--text-primary);
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 16px;
+            color: var(--text-primary);
+        }
+
+        .icon-check {
+            width: 20px;
+            height: 20px;
+            color: var(--purple-accent);
+            flex-shrink: 0;
+        }
+
+        /* Standard text info blocks */
+        .info-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 20px;
+        }
+
+        .info-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0 0 8px 0;
+            color: var(--text-primary);
+        }
+
+        .info-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        footer {
+            margin-top: 16px;
+            font-size: 13px;
+            color: #706558;
+            padding-left: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Visual bottom sheet grab bar matching screenshot layout -->
+        <div class="handle-bar"></div>
+        
+        <h1>Privacy Policy</h1>
+
+        <!-- Highlight Card Area -->
+        <div class="highlight-card">
+            <h2>Your Privacy is Protected</h2>
+            <ul class="feature-list">
+                <li class="feature-item">
+                    <!-- Embedded sharp vector check circle SVG -->
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    No data collection or sharing
+                </li>
+                <li class="feature-item">
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    No analytics or tracking
+                </li>
+                <li class="feature-item">
+                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    All data stored locally
+                </li>
+            </ul>
+        </div>
+
+        <!-- Detail Cards -->
+        <div class="info-card">
+            <h3>No Data Collection</h3>
+            <p>Drut PDF does not collect, store, transmit, or share any personal data. The app operates completely offline and does not require an internet connection. There are no analytics, tracking, or telemetry of any kind.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Local Data Storage</h3>
+            <p>All bookmarks, favorites, and app preferences are stored exclusively on your device. This data never leaves your device and is not accessible to anyone except you. You have complete control and can delete this data at any time.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>File Access</h3>
+            <p>Drut PDF requires storage permission to read PDF files from your device. This access is used solely to display your documents and is never used to collect or transmit any information.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Password Storage</h3>
+            <p>If you choose to save passwords for protected PDFs, they are stored locally using encrypted storage. Passwords never leave your device.</p>
+        </div>
+
+        <footer>
+            Last updated: June 2026
+        </footer>
+    </div>
+
+</body>
+</html>
