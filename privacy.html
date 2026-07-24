@@ -125,6 +125,14 @@
             border-bottom: 2px solid var(--border-color);
         }
 
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
         p {
             margin-bottom: 1rem;
             color: var(--text-color);
@@ -177,58 +185,76 @@
     <div class="container">
         <div class="header">
             <h1 class="app-title">Privacy Policy</h1>
-            <div class="subtitle">Drut: PDF Reader & Editor</div>
+            <div class="subtitle">Drut: PDF Reader &amp; Editor</div>
             <div class="meta">
                 <span><strong>App Package:</strong> com.drutin.drut</span>
-                <span><strong>Last Updated:</strong> July 22nd 2026</span>
+                <span><strong>Last Updated:</strong> July 24th 2026</span>
             </div>
             <div class="badges">
                 <span class="badge">100% Local File Processing</span>
-                <span class="badge">No File Uploads</span>
+                <span class="badge">Firebase Analytics &amp; Crashlytics</span>
                 <span class="badge">Google AdMob Compliant</span>
+                <span class="badge">Encrypted in Transit</span>
                 <span class="badge">COPPA Compliant</span>
             </div>
         </div>
 
         <div class="content">
             <div class="section">
-                <h2>1. PDF Processing & Security</h2>
+                <h2>1. PDF Processing &amp; Local Security</h2>
                 <p>Your privacy is extremely important to us. <strong>Drut PDF</strong> operates as an on-device utility suite designed for local document management.</p>
                 <div class="highlight-box">
-                    <strong>Zero File Transmission:</strong> All PDF document reading, editing, merging, splitting, converting, signing, compressing, and text extraction tasks occur entirely on your local device. Your files are never uploaded to, processed on, or transmitted through external servers.
+                    <strong>Zero File Transmission:</strong> All PDF document reading, editing, merging, splitting, converting, signing, compressing, and text extraction tasks occur entirely on your local device. Your files are never uploaded to, processed on, or transmitted through external cloud servers.
                 </div>
             </div>
 
             <div class="section">
-                <h2>2. Local Application Storage & Data Controls</h2>
+                <h2>2. Local Application Storage &amp; Data Controls</h2>
                 <p>All app settings, tool preferences, bookmarks, and local application states are stored strictly within your device's private sandbox storage.</p>
                 <ul>
-                    <li><strong>No Remote Storage:</strong> We do not host or store any of your document content or user profiles on cloud databases.</li>
+                    <li><strong>No Remote Document Storage:</strong> We do not host or store any of your document content or user profiles on cloud databases.</li>
                     <li><strong>Data Deletion Instructions:</strong> You can completely erase all local application data at any time by navigating to <code>Settings &gt; Apps &gt; Drut PDF &gt; Storage &gt; Clear Data</code> on your Android device, or by uninstalling the application.</li>
                 </ul>
             </div>
 
             <div class="section">
-                <h2>3. Device Storage & File Permissions</h2>
+                <h2>3. Device Storage &amp; File Permissions</h2>
                 <p>Drut PDF requests storage or file access permissions solely to enable core features requested directly by you—such as opening, editing, saving, and managing PDF files on your device's internal storage.</p>
                 <p>These permissions are strictly utilized for user-initiated file operations and are never used to access unrelated media or personal content.</p>
             </div>
 
             <div class="section">
-                <h2>4. Advertising & Third-Party Services (Google AdMob)</h2>
-                <p>To support ongoing development and offer our utility features, Drut PDF integrates <strong>Google AdMob</strong> to display banner and native advertisements within the application.</p>
-                <p>While your document files remain strictly offline, Google AdMob may automatically collect and process certain non-personal device information to serve ads, prevent fraud, and measure ad performance:</p>
+                <h2>4. Third-Party Services (Firebase &amp; Google AdMob)</h2>
+                <p>To ensure application stability, diagnose crashes, evaluate usage trends, and support ongoing development through advertising, Drut PDF integrates trusted third-party SDKs provided by Google:</p>
+
+                <h3>A. Google Analytics for Firebase</h3>
                 <ul>
-                    <li><strong>Advertising Identifiers:</strong> Android Advertising ID (AAID)</li>
-                    <li><strong>Network & Location Data:</strong> IP address and approximate coarse location</li>
-                    <li><strong>Device Specifications:</strong> Device model, operating system version, and system language</li>
-                    <li><strong>App Performance Metrics:</strong> Ad interaction data, launch diagnostics, and crash logs</li>
+                    <li><strong>Data Collected:</strong> App-instance IDs, device model, operating system version, screen views, session duration, and user interaction events.</li>
+                    <li><strong>Purpose:</strong> To understand feature usage patterns and optimize app performance.</li>
                 </ul>
-                <p>For detailed information on how Google collects and processes user data, please review the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy &amp; Terms Policy</a>.</p>
+
+                <h3>B. Firebase Crashlytics</h3>
+                <ul>
+                    <li><strong>Data Collected:</strong> Crash logs, stack traces, memory state, and device diagnostic information at the time of an app crash or ANR (Application Not Responding).</li>
+                    <li><strong>Purpose:</strong> To identify, debug, and resolve stability and performance issues across different device models.</li>
+                </ul>
+
+                <h3>C. Google AdMob (Advertising)</h3>
+                <ul>
+                    <li><strong>Data Collected:</strong> Android Advertising ID (AAID), IP address, approximate coarse location (country/city level), device specifications, and ad interaction metrics.</li>
+                    <li><strong>Purpose:</strong> To serve contextual or personalized advertisements and prevent ad fraud.</li>
+                </ul>
+
+                <p>For more details on how Google handles collected diagnostic and analytics data, please review the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy &amp; Terms Policy</a>.</p>
             </div>
 
             <div class="section">
-                <h2>5. Managing Personalized Ad Preferences</h2>
+                <h2>5. Data Security &amp; Encryption in Transit</h2>
+                <p>All diagnostic metrics, crash reports, and advertising tokens sent to third-party services (Firebase and Google AdMob) are encrypted in transit using industry-standard HTTPS/TLS encryption protocols.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Managing Privacy Preferences &amp; Ad Opt-Out</h2>
                 <p>You have full control over interest-based advertising on your device. You can view, reset, or opt out of personalized ad targeting at any time via your Android device settings:</p>
                 <div class="highlight-box">
                     <strong>Opt-Out Path:</strong> Go to <code>Settings &gt; Google &gt; Ads &gt; Delete Advertising ID</code> or <code>Opt out of Ads Personalization</code>.
@@ -236,23 +262,22 @@
             </div>
 
             <div class="section">
-                <h2>6. Children's Privacy (COPPA &amp; GDPR Compliance)</h2>
-                <p>Drut PDF is a productivity tool intended for students, professionals, and general audiences aged 13 and older. We do not knowingly direct targeted advertising to or collect personal information from children under the age of 13 (or under 16 in the EU/UK).</p>
-                <p>If you believe a child has provided information through our third-party advertising partner, please contact us immediately so we can take appropriate steps to address it.</p>
+                <h2>7. Children's Privacy (COPPA &amp; GDPR Compliance)</h2>
+                <p>Drut PDF is a productivity tool intended for students, professionals, and general audiences aged 13 and older. We do not knowingly collect personal information from or direct targeted advertising to children under the age of 13 (or under 16 in the EU/UK).</p>
+                <p>If you believe a child has provided information through our application or third-party SDKs, please contact us immediately so we can take appropriate corrective steps.</p>
             </div>
 
             <div class="section">
-                <h2>7. Changes to This Privacy Policy</h2>
+                <h2>8. Changes to This Privacy Policy</h2>
                 <p>We may update our Privacy Policy periodically to reflect app functional enhancements or store compliance policy updates. Any updates will be published directly on this page with a revised "Last Updated" date at the top.</p>
             </div>
 
             <div class="section">
-                <h2>8. Contact Us</h2>
+                <h2>9. Contact Us</h2>
                 <p>If you have any questions, feedback, or concerns regarding this Privacy Policy or app permissions, feel free to contact us:</p>
                 <div class="contact-card">
-                    <p><strong>App Name:</strong> Drut: PDF Reader& Editor</p>
+                    <p><strong>App Name:</strong> Drut: PDF Reader &amp; Editor</p>
                     <p><strong>Support Email:</strong> <a href="mailto:support.drutin@gmail.com">support.drutin@gmail.com</a></p>
-                    
                 </div>
             </div>
         </div>
